@@ -16,6 +16,7 @@ const searchStates = async searchText => {
     // If search input is empty, reset matches array to empty array to prevent all 50 states from returning
     if (searchText.length === 0) {
         matches = [];
+        matchList.innerHTML = '';
     } 
 
     // Then create list of matches
