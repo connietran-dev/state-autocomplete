@@ -3,7 +3,7 @@ const matchList = document.getElementById("match-list");
 
 // Function to search state.json
 const searchStates = async searchText => {
-    const res = await fetch('https://github.com/connietran-dev/state-autocomplete/blob/main/data/states.json');
+    const res = await fetch('https://connietran-dev.github.io/state-autocomplete/data/states.json');
     const states = await res.json();
 
     let matches = states.filter(state => {
